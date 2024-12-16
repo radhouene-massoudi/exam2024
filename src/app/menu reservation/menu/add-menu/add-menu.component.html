@@ -1,0 +1,7 @@
+<form [formGroup]="fg">
+<label>title</label>
+<input type="text"  formControlName="title">
+<label>description</label>
+<input type="text"  formControlName="description">
+<input type="submit" value="save" [disabled]="fg.invalid" (click)="addMenuafterOneClic(fg.value)">
+</form>
