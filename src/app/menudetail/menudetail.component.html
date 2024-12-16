@@ -1,1 +1,9 @@
 <p>menudetail works!</p>
+{{detailsinformatons.id}}
+{{detailsinformatons.description}}
+<form #f="ngForm">
+    <label>mark</label>
+<input type="number" name="mark" ngModel>
+<input type="submit" value="mark" (click)="updateMenu(f.value)">
+<div *ngIf="msg!=''"> {{msg}}</div>
+</form>
